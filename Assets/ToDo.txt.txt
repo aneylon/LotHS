@@ -8,3 +8,19 @@ trigger door
 	proximity
 	flip switch
 	switch timer
+  animate up
+  animate down
+
+player
+  Life, etc
+  do damage
+
+enemy
+  life
+
+pickups
+  life
+  money
+
+npc
+  text bubble
