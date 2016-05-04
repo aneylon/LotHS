@@ -1,0 +1,10 @@
+http://docs.unity3d.com/Manual/Navigation.html
+http://docs.unity3d.com/Manual/nav-AgentPatrol.html
+
+door animation
+	https://www.youtube.com/watch?v=nVOQkQrnBJY
+
+trigger door
+	proximity
+	flip switch
+	switch timer
