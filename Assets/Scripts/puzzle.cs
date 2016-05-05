@@ -14,11 +14,9 @@ public class puzzle : MonoBehaviour {
         dist = Vector3.Distance(targetPlayer.transform.position, transform.position);
         if (dist <= activeateDistance) {
             activeLight.GetComponent<Renderer>().material = activeMat;
-           // Debug.Log("activate!");
         }
         if (dist >= activeateDistance) {
             activeLight.GetComponent<Renderer>().material = notActiveMat;
-            //Debug.Log("no activate");
         }
 	}
 }

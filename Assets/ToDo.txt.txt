@@ -10,6 +10,12 @@ trigger door
 	switch timer
   animate up
   animate down
+	key
+
+Weapons
+Armor
+	upgrades
+Tools - for puzzle solving
 
 player
   Life, etc
@@ -21,6 +27,16 @@ enemy
 pickups
   life
   money
+  elements
+  monster drops
+
+Treasurechest
+Crate
+Barrel
+Pot
+	pickup / throw
+
+push/pull obstacle
 
 npc
   text bubble
@@ -29,3 +45,15 @@ puzzle
 	update mat on trigger
 	update mat after time
 	cause animation
+
+Menu
+	Audio
+		sfx
+		music
+	Save
+	Load
+	Quit
+	Start
+	in game pause
+
+general store
