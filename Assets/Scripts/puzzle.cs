@@ -2,14 +2,23 @@
 using System.Collections;
 
 public class puzzle : MonoBehaviour {
+    public GameObject targetPlayer;
+    public float activeateDistance = 1.0f;
+    public float timer = 5.0f;
+    public float dist;
+    public Material activeMat;
+    public Material notActiveMat;
+    public GameObject activeLight;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
 	void Update () {
-	
+        dist = Vector3.Distance(targetPlayer.transform.position, transform.position);
+        if (dist <= activeateDistance) {
+            activeLight.GetComponent<Renderer>().material = activeMat;
+           // Debug.Log("activate!");
+        }
+        if (dist >= activeateDistance) {
+            activeLight.GetComponent<Renderer>().material = notActiveMat;
+            //Debug.Log("no activate");
+        }
 	}
 }

@@ -24,3 +24,8 @@ pickups
 
 npc
   text bubble
+
+puzzle
+	update mat on trigger
+	update mat after time
+	cause animation
