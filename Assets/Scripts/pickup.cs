@@ -2,14 +2,15 @@
 using System.Collections;
 
 public class pickup : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
+    public Transform pickupParticles;
+    public float rotateSpeed;
 	void Update () {
-	
+        transform.Rotate(Vector3.up * (Time.deltaTime * rotateSpeed));
 	}
+    void OnTriggerEnter(Collider other) {
+        if(other.tag == "Player") {
+            Instantiate(pickupParticles,transform.position,Quaternion.identity);
+            Destroy(this.gameObject);
+        }
+    }
 }
