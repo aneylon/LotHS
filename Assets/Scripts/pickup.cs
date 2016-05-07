@@ -9,7 +9,6 @@ public class pickup : MonoBehaviour {
 	}
     void OnTriggerEnter(Collider other) {
         if(other.tag == "Player") {
-            Debug.Log("Pick it up");
             Instantiate(pickupParticles,transform.position,Quaternion.identity);
             Destroy(this.gameObject);
         }
